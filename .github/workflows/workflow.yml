@@ -1,4 +1,4 @@
-name: Final Project
+name: Gradle CI
 
 on:
   push:
@@ -21,5 +21,12 @@ jobs:
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
 
-      - name: Build
-        run: ./gradlew build
+      - name: Build (includes tests)
+        run: ./gradlew build --stacktrace
+
+      - name: Upload test report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-report
+          path: build/reports/tests/test
