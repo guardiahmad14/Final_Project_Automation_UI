@@ -21,12 +21,19 @@ jobs:
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
 
+      # Install Chrome (kalau belum ada) + pastikan ada binary
+      - name: Setup Chrome
+        uses: browser-actions/setup-chrome@v1
+
+      # Install ChromeDriver yang sesuai
+      - name: Setup ChromeDriver
+        uses: nanasess/setup-chromedriver@v2
+
+      - name: Verify browser & driver
+        run: |
+          google-chrome --version
+          chromedriver --version
+          which chromedriver
+
       - name: Build (includes tests)
         run: ./gradlew build --stacktrace
-
-      - name: Upload test report
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: test-report
-          path: build/reports/tests/test
