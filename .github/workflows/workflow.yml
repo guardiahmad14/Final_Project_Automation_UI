@@ -1,4 +1,4 @@
-name: Gradle CI
+name: Final Project
 
 on:
   push:
@@ -21,19 +21,22 @@ jobs:
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
 
-      # Install Chrome (kalau belum ada) + pastikan ada binary
+      # 1) Install Google Chrome
       - name: Setup Chrome
         uses: browser-actions/setup-chrome@v1
 
-      # Install ChromeDriver yang sesuai
+      # 2) Install ChromeDriver + add to PATH
       - name: Setup ChromeDriver
         uses: nanasess/setup-chromedriver@v2
 
-      - name: Verify browser & driver
+      # 3) Verifikasi (biar kalau gagal kelihatan jelas)
+      - name: Verify Chrome & Driver
         run: |
           google-chrome --version
           chromedriver --version
+          which google-chrome
           which chromedriver
 
+      # 4) Build + test
       - name: Build (includes tests)
         run: ./gradlew build --stacktrace
