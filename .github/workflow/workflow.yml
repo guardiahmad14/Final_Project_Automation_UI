@@ -1,19 +1,22 @@
-name : Final Project
+name: Gradle CI
 
 on:
-  pull request:
-    branches:
-      -main
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
 
 jobs:
-  test:
+  build:
     runs-on: ubuntu-latest
-    container:
-      image: node:20
     steps:
-      -uses: actions/checkout@v3
-       with:
-         node-version:20
-      -run: npm ci
-      -run: npm test
-      -run: npm run build
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+          cache: gradle
+
+      - name: Build
+        run: ./gradlew build
