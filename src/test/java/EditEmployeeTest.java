@@ -22,9 +22,9 @@ public class EditEmployeeTest extends BaseTest {
     @Test
     public void success_edit_employee(){
         log.info("Edit Employee Success");
-        CredentialConfig CredentialsConfig = null;
-        String email = CredentialsConfig.EMAIL;
-        String password = CredentialsConfig.PASSWORD;
+        CredentialConfig credentialConfig = new CredentialConfig();
+        String email = credentialConfig.EMAIL;
+        String password = credentialConfig.PASSWORD;
         LoginPage loginPage = new LoginPage(DriverManager.getDriver());
         DashboardPage dashboardPage = new DashboardPage(DriverManager.getDriver());
         EmployeePage employeePage = new EmployeePage(DriverManager.getDriver());
