@@ -23,9 +23,9 @@ public class LoginTest extends BaseTest {
     @Test
     public void success_login(){
         log.info("Success Login");
-        CredentialConfig credentialConfig = new CredentialConfig();
-        String email = credentialConfig.EMAIL;
-        String password = credentialConfig.PASSWORD;
+        CredentialConfig CredentialsConfig = null;
+        String email = CredentialsConfig.EMAIL;
+        String password = CredentialsConfig.PASSWORD;
         LoginPage loginPage = new LoginPage(DriverManager.getDriver());
         DashboardPage dashboardPage = new DashboardPage(DriverManager.getDriver());
 

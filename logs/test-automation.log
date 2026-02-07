@@ -1,20 +1,6 @@
-2026-02-01 05:15:24.857 [Test worker] INFO  AddEmployeeTest - Add Employee Success
-2026-02-01 05:15:25.371 [Test worker] INFO  AddEmployeeTest - Sukses input email
-2026-02-01 05:15:25.502 [Test worker] INFO  AddEmployeeTest - Sukses input password
-2026-02-01 05:15:25.606 [Test worker] INFO  AddEmployeeTest - Sukses klik button login
-2026-02-01 05:15:26.796 [Test worker] INFO  AddEmployeeTest - Dashboard text terlihat
-2026-02-01 05:15:26.999 [Test worker] INFO  AddEmployeeTest - Sukses klik menu employee
-2026-02-01 05:15:27.473 [Test worker] INFO  AddEmployeeTest - Title manage employee list terlihat
-2026-02-01 05:15:27.512 [Test worker] INFO  AddEmployeeTest - Telihat button add employee
-2026-02-01 05:15:27.672 [Test worker] INFO  AddEmployeeTest - Sukses klik add employee button
-2026-02-01 05:15:28.082 [Test worker] INFO  AddEmployeeTest - Sukses input nama
-2026-02-01 05:15:28.579 [Test worker] INFO  AddEmployeeTest - Sukses input Employee ID
-2026-02-01 05:15:29.031 [Test worker] INFO  AddEmployeeTest - Sukses input email
-2026-02-01 05:15:29.249 [Test worker] INFO  AddEmployeeTest - SUkses input nomor hp
-2026-02-01 05:15:29.421 [Test worker] INFO  AddEmployeeTest - Sukses input role
-2026-02-01 05:15:29.589 [Test worker] INFO  AddEmployeeTest - Terlihat field Division
-2026-02-01 05:15:30.805 [Test worker] INFO  AddEmployeeTest - Sukses memilih salah satu divisi
-2026-02-01 05:15:30.845 [Test worker] INFO  AddEmployeeTest - Button add employee enable
-2026-02-01 05:15:30.986 [Test worker] INFO  AddEmployeeTest - Sukses klik button add employee
-2026-02-01 05:15:31.383 [Test worker] INFO  AddEmployeeTest - Notifikasi sukses membuat employee baru
-2026-02-01 05:15:31.416 [Test worker] INFO  AddEmployeeTest - Title manage employee list terlihat
+2026-02-07 11:47:00.853 [Test worker] INFO  LoginTest - Success Login
+2026-02-07 11:47:01.270 [Test worker] INFO  LoginTest - Sukses Memasukkan Email
+2026-02-07 11:47:01.385 [Test worker] INFO  LoginTest - Sukses Memasukkan Password
+2026-02-07 11:47:01.489 [Test worker] INFO  LoginTest - Sukses Klik Button
+2026-02-07 11:47:02.405 [Test worker] INFO  LoginTest - Pengguna Berhasil Login dan Diarahkan ke Dashboard
+2026-02-07 11:47:02.992 [Test worker] INFO  LoginTest - Browser ditutup setelah test selesai

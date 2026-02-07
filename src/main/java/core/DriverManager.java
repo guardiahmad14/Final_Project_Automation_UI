@@ -12,11 +12,11 @@ public class DriverManager {
         if (browser.equalsIgnoreCase("chrome")){
             System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/driver/chromedriver.exe");
             driver.set(new ChromeDriver());
-        } else if (browser.equalsIgnoreCase("firefox")){
-            System.setProperty("webdriver.gecko.driver",System.getProperty("user.dir")+"/driver/geckodriver.exe");
-            driver.set(new FirefoxDriver());
-        } else {
-            throw new IllegalArgumentException("Unsupported browser" + browser);
+//        } else if (browser.equalsIgnoreCase("firefox")){
+//            System.setProperty("webdriver.gecko.driver",System.getProperty("user.dir")+"/driver/geckodriver.exe");
+//            driver.set(new FirefoxDriver());
+//        } else {
+//            throw new IllegalArgumentException("Unsupported browser" + browser);
         }
 
         driver.get().get("https://lms-b2b.do.dibimbing.id/dibimbingqa/login");

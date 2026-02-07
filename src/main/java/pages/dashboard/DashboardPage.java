@@ -20,6 +20,8 @@ public class DashboardPage extends BasePage {
     @FindBy(xpath = "//div[@id='layout-desktop-menu-item-box-training']//div[@class='chakra-stack css-16awuyr']")
     private WebElement trainingMenuButton;
 
+
+
     public void verifyDashboardTextIsDisplayed(){
         Assert.assertTrue(dashboardText.isDisplayed(), "Dashboard Text is not displayed");
     }
