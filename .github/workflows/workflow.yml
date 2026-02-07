@@ -30,3 +30,5 @@ jobs:
         run: .\gradlew.bat clean test -Penv=staging --no-daemon --stacktrace
         env:
           GITHUB_ACTIONS: true
+          EMAIL: ${{ secrets.EMAIL }}
+          PASSWORD: ${{ secrets.PASSWORD }}

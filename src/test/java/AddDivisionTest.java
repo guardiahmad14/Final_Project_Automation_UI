@@ -82,9 +82,9 @@ public class AddDivisionTest extends BaseTest {
     @Test
     public void add_division_test_failed(){
         log.info("Add Division Failed");
-        CredentialConfig CredentialsConfig = null;
-        String email = CredentialsConfig.EMAIL;
-        String password = CredentialsConfig.PASSWORD;
+        CredentialConfig credentialConfig = new CredentialConfig();
+        String email = credentialConfig.EMAIL;
+        String password = credentialConfig.PASSWORD;
         LoginPage loginPage = new LoginPage(DriverManager.getDriver());
         DashboardPage dashboardPage = new DashboardPage(DriverManager.getDriver());
         EmployeePage employeePage = new EmployeePage(DriverManager.getDriver());
