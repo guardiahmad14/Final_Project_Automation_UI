@@ -21,7 +21,6 @@ public class DashboardPage extends BasePage {
     private WebElement trainingMenuButton;
 
 
-
     public void verifyDashboardTextIsDisplayed(){
         Assert.assertTrue(dashboardText.isDisplayed(), "Dashboard Text is not displayed");
     }
