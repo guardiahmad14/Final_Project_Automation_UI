@@ -13,6 +13,6 @@ public class CredentialConfig {
         }
     }
 
-    private CredentialConfig() {
+    public CredentialConfig() {
     }
 }
