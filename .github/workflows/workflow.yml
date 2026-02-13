@@ -37,5 +37,6 @@ jobs:
         run: .\gradlew.bat clean test -Penv=staging --no-daemon --stacktrace
         env:
           GITHUB_ACTIONS: true
+          BASE_URL: https://lms-b2b.do.dibimbing.id/dibimbingqa/login
           EMAIL: ${{ secrets.FINAL_PROJECT_UI_EMAIL }}
           PASSWORD: ${{ secrets.FINAL_PROJECT_UI_PASSWORD }}

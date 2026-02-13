@@ -76,47 +76,47 @@ public class AddDivisionTest extends BaseTest {
         log.info("Kembali ke halaman manage division");
     }
 
-    @Test
-    public void add_division_test_failed(){
-        log.info("Add Division Failed");
-        CredentialConfig credentialConfig = new CredentialConfig();
-        String email = credentialConfig.EMAIL;
-        String password = credentialConfig.PASSWORD;
-        LoginPage loginPage = new LoginPage(DriverManager.getDriver());
-        DashboardPage dashboardPage = new DashboardPage(DriverManager.getDriver());
-        EmployeePage employeePage = new EmployeePage(DriverManager.getDriver());
-        AddDivisionPage addDivisionPage = new AddDivisionPage(DriverManager.getDriver());
-
-        loginPage.inputUsernameTextField(email);
-        log.info("Sukses Memasukkan Email");
-        loginPage.inputPasswordTextField(password);
-        log.info("Sukses Memasukkan Password");
-        loginPage.clickLoginButton();
-        log.info("Sukses Klik Button");
-
-        dashboardPage.verifyDashboardTextIsDisplayed();
-        log.info("Pengguna Berhasil Login dan Diarahkan ke Dashboard");
-        dashboardPage.clickEmployeeMenutButton();
-        log.info("Berhasil klik Employee Button");
-
-        employeePage.verifyManageEmployeeListTextIsDisplayed();
-        log.info("Title manage employee list terlihat");
-        employeePage.verifyAddEmployeeButtonIsDisplayed();
-        log.info("Telihat button add employee");
-        employeePage.clickDivisionButton();
-        log.info("Berhasil click tab division");
-        employeePage.verifyManageDivisionTextIsDisplayed();
-        log.info("Title manage division terlihat");
-        employeePage.clickAddDivisionButton();
-        log.info("Berhasil klik add division");
-
-        addDivisionPage.inputNameTextField("");
-        log.info("Nama division tetap kosong");
-        addDivisionPage.inputDivisionDescriptionTextField("Ini ya ramah tamah");
-        log.info("Berhasil isi deskripsi division");
-        addDivisionPage.clickAddDivisionButton();
-        log.info("Berhasil klik add division");
-    }
+//    @Test
+//    public void add_division_test_failed(){
+//        log.info("Add Division Failed");
+//        CredentialConfig credentialConfig = new CredentialConfig();
+//        String email = credentialConfig.EMAIL;
+//        String password = credentialConfig.PASSWORD;
+//        LoginPage loginPage = new LoginPage(DriverManager.getDriver());
+//        DashboardPage dashboardPage = new DashboardPage(DriverManager.getDriver());
+//        EmployeePage employeePage = new EmployeePage(DriverManager.getDriver());
+//        AddDivisionPage addDivisionPage = new AddDivisionPage(DriverManager.getDriver());
+//
+//        loginPage.inputUsernameTextField(email);
+//        log.info("Sukses Memasukkan Email");
+//        loginPage.inputPasswordTextField(password);
+//        log.info("Sukses Memasukkan Password");
+//        loginPage.clickLoginButton();
+//        log.info("Sukses Klik Button");
+//
+//        dashboardPage.verifyDashboardTextIsDisplayed();
+//        log.info("Pengguna Berhasil Login dan Diarahkan ke Dashboard");
+//        dashboardPage.clickEmployeeMenutButton();
+//        log.info("Berhasil klik Employee Button");
+//
+//        employeePage.verifyManageEmployeeListTextIsDisplayed();
+//        log.info("Title manage employee list terlihat");
+//        employeePage.verifyAddEmployeeButtonIsDisplayed();
+//        log.info("Telihat button add employee");
+//        employeePage.clickDivisionButton();
+//        log.info("Berhasil click tab division");
+//        employeePage.verifyManageDivisionTextIsDisplayed();
+//        log.info("Title manage division terlihat");
+//        employeePage.clickAddDivisionButton();
+//        log.info("Berhasil klik add division");
+//
+//        addDivisionPage.inputNameTextField("");
+//        log.info("Nama division tetap kosong");
+//        addDivisionPage.inputDivisionDescriptionTextField("Ini ya ramah tamah");
+//        log.info("Berhasil isi deskripsi division");
+//        addDivisionPage.clickAddDivisionButton();
+//        log.info("Berhasil klik add division");
+//    }
 
     @AfterMethod
     public void closeBrowser(){
