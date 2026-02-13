@@ -26,6 +26,13 @@ jobs:
         with:
           chrome-version: "stable"
 
+      - name: Upload test report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-report
+          path: build/reports/tests/test
+
       - name: Run tests with Gradle
         run: .\gradlew.bat clean test -Penv=staging --no-daemon --stacktrace
         env:

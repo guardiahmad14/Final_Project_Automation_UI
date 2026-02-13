@@ -9,7 +9,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.annotations.Test;
 import pages.dashboard.DashboardPage;
-import pages.employee.AddEmployeePage;
 import pages.employee.DetailEmployeePage;
 import pages.employee.EmployeePage;
 import pages.login.LoginPage;
