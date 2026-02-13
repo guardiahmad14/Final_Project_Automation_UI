@@ -51,4 +51,6 @@ gradle wrapper --gradle-version=8.5
 - Review CI test reports in artifacts
 - Add explicit waits instead of Thread.sleep
 
+### 6. 
+
 ---
